@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "203923247760",
+    "project_id": "qh-login-page-ed2ea",
+    "storage_bucket": "qh-login-page-ed2ea.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203923247760:android:8c14185fd107b66f1c7e15",
+        "android_client_info": {
+          "package_name": "com.cnd.quick_home"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyrRuUy1w0is2KfgbB6EzP35jhd2mySPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

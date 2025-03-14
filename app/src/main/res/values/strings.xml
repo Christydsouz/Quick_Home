@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Quick_Home</string>
+    <string name="login">login</string>
+    <string name="Login">Login</string>
+    <string name="enter_the_email">Enter The Email</string>
+    <string name="enter_the_password">Enter The Password</string>
+    <string name="email_id">Email id</string>
+    <string name="signup">SignUp</string>
+    <string name="logout">logout</string>
+</resources>
