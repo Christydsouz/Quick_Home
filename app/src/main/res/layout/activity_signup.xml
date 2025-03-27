@@ -1,128 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:layout_height="match_parent"
-    tools:context=".Login"
-    android:padding="0dp"
-    android:background="@color/white">
+    android:fillViewport="true"
+    android:background="@color/white"
+    tools:context=".Login">
 
-    <FrameLayout
-        android:layout_width="fill_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="-260dp"
-        android:layout_marginBottom="70dp"
-        android:gravity="center">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+    <View
+        android:layout_width="1113dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="100dp"
-            android:background="@color/black"/>
-        <ImageView
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/qucikhomes"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Signup Title -->
+
+    <!-- Email Label -->
+
+        <TextView
+            android:id="@+id/tv_signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/qucikhomes"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/inter"
+            android:paddingTop="40dp"
+            android:text="@string/signup"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_gravity="center">
-
-        </ImageView>
-    </FrameLayout>
+            app:layout_constraintTop_toBottomOf="@id/logo" />
 
 
-    <TextView
-        android:layout_width="397dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:fontFamily="@font/inter"
-        android:text="@string/signup"
-        android:textColor="@color/black"
-        android:textSize="50dp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="382dp"
+        <TextView
+        android:id="@+id/tv_email"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter"
         android:text="@string/email_id"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:layout_marginBottom="3dp">
-    </TextView>
+        app:layout_constraintTop_toBottomOf="@id/tv_signup"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="400dp"
-        android:layout_height="wrap_content">
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/email"
-            android:hint="@string/enter_the_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:layout_marginBottom="30dp"/>
-    </com.google.android.material.textfield.TextInputLayout>
+    <!-- Email Input -->
+
+    <!-- Password Label -->
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:hint="@string/enter_the_email"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_email" />
+
     <TextView
-        android:layout_width="382dp"
+        android:id="@+id/tv_password"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter"
         android:text="@string/enter_the_password"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:layout_marginBottom="3dp">
-    </TextView>
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="400dp"
-        android:layout_height="wrap_content">
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/password"
-            android:hint="@string/enter_the_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:layout_marginBottom="30dp"/>
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintTop_toBottomOf="@id/email"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
 
+    <!-- Password Input -->
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/password"
+        android:layout_marginLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_the_password"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tv_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Progress Bar -->
     <ProgressBar
         android:id="@+id/progressbar"
-        android:visibility="gone"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Signup Button -->
     <Button
         android:id="@+id/btn_signup"
-        android:layout_width="243dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/black"
-        android:text="Sign Up"
-        android:textColor="@color/white">
-    </Button>
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/progressbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
 
-    <FrameLayout
-        android:layout_width="162dp"
-        android:layout_height="wrap_content">
+    <!-- "Have an account?" Label -->
+    <TextView
+        android:id="@+id/tv_have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="@string/have_an_account"
+        app:layout_constraintTop_toBottomOf="@id/btn_signup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/inter"
-            android:text="Have an account?">
+    <!-- Login Link -->
+    <TextView
+        android:id="@+id/logind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/Login"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_have_account" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </TextView>
-
-        <TextView
-            android:id="@+id/logind"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:fontFamily="@font/inter"
-            android:text="@string/Login"
-            android:textStyle="bold">
-
-        </TextView>
-    </FrameLayout>
-
-</LinearLayout>
+</androidx.core.widget.NestedScrollView>
