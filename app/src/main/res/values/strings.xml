@@ -11,4 +11,15 @@
     <string name="have_an_account">Have an account?</string>
     <string name="signin">SignIn</string>
     <string name="sign_in">Sign In</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="pickup_pickup_address">Pickup: [Pickup Address]</string>
+    <string name="dropoff_dropoff_address">Dropoff: [Dropoff Address]</string>
+    <string name="amount_total_amount">Amount: $[Total Amount]</string>
+    <string name="card_number">Card Number</string>
+    <string name="submit_payment">Submit Payment</string>
+    <string name="select_payment_method">Select Payment Method</string>
+    <string name="cardholder_name">Cardholder Name</string>
+    <string name="cvv">CVV</string>
+    <string name="mm_yy">MM/YY</string>
 </resources>
+
