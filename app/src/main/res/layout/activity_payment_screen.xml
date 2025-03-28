@@ -44,7 +44,7 @@
         android:text="@string/amount_total_amount"
         android:textSize="18sp"
         android:layout_marginBottom="20dp"
-        android:textColor="#B5A7CA"/>
+        android:textColor="#673AB7"/>
 
     <!-- Credit Card Number -->
     <EditText
@@ -120,7 +120,7 @@
         android:layout_height="wrap_content"
         android:text="@string/submit_payment"
         android:textColor="#FFFFFF"
-        android:background="#FF6200EE"
+        android:backgroundTint="#000000"
         android:padding="16dp"
         android:textSize="16sp"/>
 </LinearLayout>
