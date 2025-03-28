@@ -21,5 +21,6 @@
     <string name="cardholder_name">Cardholder Name</string>
     <string name="cvv">CVV</string>
     <string name="mm_yy">MM/YY</string>
+    <string name="pickup_location">Pickup Location</string>
 </resources>
 
