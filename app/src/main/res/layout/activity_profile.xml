@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="# Profile"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Name -->
+        <ImageView
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/black"
+            android:backgroundTint="@color/material_dynamic_primary0"
+            android:padding="5dp"
+            android:scaleType="center"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_launcher_foreground"
+            android:id="@+id/profilepic"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Phone Number -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textColor="@android:color/darker_gray"/>
+
+        <EditText
+            android:id="@+id/tvPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:textColor="@android:color/darker_gray"/>
+
+        <EditText
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Required"
+            android:inputType="textEmailAddress"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Gender -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="@android:color/darker_gray"/>
+
+        <EditText
+            android:id="@+id/tvGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textWebEditText"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Date of Birth -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth"
+            android:textColor="@android:color/darker_gray"/>
+
+        <EditText
+            android:id="@+id/tvDob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Required"
+            android:inputType="date"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Member Since -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Member Since"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/tvMemberSince"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="March 2025"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Emergency contact -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Emergency contact"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/tvEmergencyContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Required"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textColor="@android:color/white"/>
+        
+        <ProgressBar
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/material_dynamic_primary70"></ProgressBar>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

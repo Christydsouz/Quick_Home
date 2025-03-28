@@ -20,6 +20,9 @@
             android:name=".PaymentScreen"
             android:exported="false" />
         <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".Acitivity_payments"
             android:exported="false" />
         <activity
